@@ -1,0 +1,2 @@
+1) if you haven't used npm/node enviroment before, it's quite pain in the ass to setup the first truffle project. (setting up PATH should be explained.)
+
