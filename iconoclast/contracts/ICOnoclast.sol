@@ -62,8 +62,7 @@ contract ICOnoclast {
         return true;
     }
 
-    function transferFrom(address _from, address _to,
-                                                uint256 _amount) public returns (bool) {
+    function transferFrom(address _from, address _to, uint256 _amount) public returns (bool) {
         if (now < presaleEnd || allowed[_from][msg.sender] < _amount
                 || balances[_from] < _amount || _amount == 0) {
             return false;
@@ -73,8 +72,7 @@ contract ICOnoclast {
         return true;
     }
 
-    function approve(address _spender,
-                                     uint256 _amount) public returns (bool) {
+    function approve(address _spender, uint256 _amount) public returns (bool) {
         allowed[msg.sender][_spender] = _amount;
         return true;
     }
